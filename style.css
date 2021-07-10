@@ -1,0 +1,400 @@
+/* font-family: 'Poppins', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* header codes here */
+.header-container{
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(images/hero-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 50px;
+    position: relative;
+}
+.navbar{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.navbar .logo{
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+}
+.navlinks{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlinks li{
+    list-style: none;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.navlinks li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+.navlinks li:hover{
+    background-color: hotpink;
+}
+.navOpen{
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+}
+.close{
+    color: rgb(255, 255, 255);
+    display: none;
+}
+a.close{
+    text-decoration: none;font-size: 3rem;
+}
+/* text-box */
+.textbox{
+    position: absolute;
+    width: 92%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.text{
+    text-align: center;
+    color: rgb(255, 253, 253);
+}
+.text h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.text p{
+    font-weight: 100;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+.text button{
+    background-color: transparent;
+    border: 2px solid hotpink;
+    padding: .5rem 1.5rem;
+    margin-top: 10px;
+    transition: all .5s ease-in-out;
+}
+.text button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.text button:hover{
+    background-color: hotpink;
+    transform: scale(1.2);
+}
+.text button:hover a{
+    color: black;
+}
+
+/* main content */
+/* about */
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgb(238, 238, 238);
+}
+.image{
+    width: 50%;
+}
+.image img{
+    width: 100%;
+}
+.about-text{
+    flex: 1;
+    padding: 4rem 5rem 2rem 2rem;
+}
+.about-text h3{
+    color: #4B39B5;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.about-text p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: rgb(104, 104, 104);
+}
+.about-text span a{
+    text-decoration: none;
+    background-color: hotpink;
+    padding: .5rem;
+    color: #fff;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+.about-text span a:hover{
+    background-color: rgb(218, 42, 130);
+}
+
+
+/* Overview section */
+.Overview{
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+}
+.heading{
+    padding: 4rem 3rem;
+}
+.heading h3{
+    color: #4B39B5;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.heading p{
+    color: rgb(63, 63, 63);
+}
+.overview-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.overview-image{
+    width: 400px;
+    height: 270px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.student{
+    background-image: url(images/student.jpg);
+}
+.teacher{
+    background-image: url(images/teacher.jpg);
+}
+.dept{
+    background-image: url(images/school-dep.jpg);
+}
+.up{
+    background-color: #4B39B5;
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    padding: .5rem;
+    color: #fff;
+}
+/* facilities */
+.Facilities{
+    background-color: rgb(238, 238, 238);
+    padding-bottom: 3rem;
+}
+.facility-image-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Facilities .heading{
+    text-align: left;
+}
+.inner{
+    width: 300px;
+    background-color: #fff;
+}
+.facility-image{
+    height: 200px;
+    width: 100%;  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+}
+.facility-image:hover{
+    transform: scale(.9);
+}
+.academics{
+    background-image: url(images/academics.jpg);
+}
+.accom{
+    background-image: url(images/student-aco.jpg);
+}
+.resources{
+    background-image: url(images/resources.jpg);
+}
+.facility-text{
+    padding: 1rem;
+}
+.facility-text h4{
+    color: #4B39B5;
+    margin-bottom: 10px;
+}
+.facility-text p{
+    color: rgb(88, 88, 88);
+}
+/* contact */
+.Contact{
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+}
+.contact-image{
+    width: 100%;
+    height: 400px;
+    background-image: url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+}
+.contact-container .heading{
+    flex: 1;
+    padding-bottom: 0;
+}
+.con{
+    display: flex;
+    width: 50%;
+    flex: 2;
+    justify-content: space-around;
+}
+.inner-con h5{
+    color: #4B39B5;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.inner-con p{
+    color: #5a5a5a;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: #4B39B5;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-size: 13px;
+}
+
+/* Media Query screen size 768px below */
+@media all and (max-width: 768px){
+    .navbar .logo{
+        text-align: left;
+    }
+    .navlinks{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        background-color: #292929;
+        display: none;
+        left: 0;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    .navlinks li a{
+        color: rgb(255, 255, 255);
+    }
+    .navlinks li{
+        border-radius: 0px;
+    }
+    .navlinks li:hover{
+        background-color: #616161;
+    }
+    .navOpen{
+        display: block;
+        cursor: pointer;
+    }
+    .close{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 1rem;
+        top: 0;
+    }
+    /* textbox */
+    .text h1{
+        font-size: 2rem;
+    }
+    .text p{
+        font-size: 1rem;
+    }
+    .textbox{
+        top: 50%;
+    }
+    .text button a{
+        font-size: .8rem;
+    }
+    /* main */
+    /* about */
+    .about{
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+    }
+    /* overview */
+    .overview-images{
+        flex-direction: column;
+    }
+    .overview-image{
+        margin-bottom: 1rem;
+        width: 80%;
+    }
+    .heading{
+        text-align: center 
+    }
+    .heading h3{
+        color: #4B39B5;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    /* facilities */
+    .facility-image-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Facilities .heading{
+        text-align: center;
+    }
+    .Facilities .heading h3{
+        font-size: 2rem;
+    }
+    .inner{
+        margin-bottom: 2rem;
+    }
+    /* contact */
+    .contact-container{
+        display: block;
+        text-align: center;
+    }
+    .con{
+        display: block;
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .inner-con{
+        margin-bottom: 30px;
+    }
+    .contact-container .heading h3{
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+}
